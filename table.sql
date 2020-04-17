@@ -43,7 +43,7 @@ CREATE TABLE `signup` (
 
 /*Data for the table `signup` */
 
-insert  into `signup`(`name`,`username`,`email`,`password`) values (' Vinayak ',' VinayakJaiswal ',' v@gmail.com ',' abc ');
+insert  into `signup`(`name`,`username`,`email`,`password`) values (' Viroang ',' chromeBullGuy ',' viroang@gmail.com ',' 456 '),(' Utkarsh ',' utgupta ',' u@gmail.com ',' 123 '),(' Virendra ',' vc ',' vc@gmail.com ',' xyz '),(' Vinayak ',' VinayakJaiswal ',' v@gmail.com ',' abc ');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
