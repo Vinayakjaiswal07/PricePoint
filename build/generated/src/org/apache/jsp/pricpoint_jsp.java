@@ -48,24 +48,21 @@ public final class pricpoint_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("<html>\n");
       out.write("<body>\n");
-      out.write("<table cellspacing=\"2\" border='1'>\n");
- 
-    
-   String fName = "C:\\Users\\GOPAL\\Desktop\\pricepoint\\PricePoint\\PricePoint\\flipkart1.csv";
-   String thisLine; 
-  int count=0; 
-  FileInputStream fis = new FileInputStream(fName);
-  DataInputStream myInput = new DataInputStream(fis);
-  int i=0; 
-   
+
+     String fName = "C:\\Users\\GOPAL\\Desktop\\pricepoint\\PricePoint\\PricePoint\\flipkart1.csv";
+     String thisLine;
+      int count=0;
+      FileInputStream fis = new FileInputStream(fName);
+      DataInputStream myInput = new DataInputStream(fis);
+      int i=0;
+
+      out.write("\n");
+      out.write("<table cellpadding=\"2\" border=\"5\">\n");
+      out.write("\n");
+
 while ((thisLine = myInput.readLine()) != null)
 {
 String strar[] = thisLine.split(",");
-    
-
-      out.write("\n");
-      out.write("<tr>\n");
-
 for(int j=0;j<strar.length;j++)
 {
 if(i!=0)
@@ -79,8 +76,6 @@ out.print(" <b>" +strar[j]+ "</b> ");
 }
 out.println("<br>");
 i++;
-      out.write("</tr>");
-
 }
 
       out.write("\n");

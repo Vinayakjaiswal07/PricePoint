@@ -55,7 +55,7 @@ public final class signup_jsp extends org.apache.jasper.runtime.HttpJspBase
     Statement st = con.createStatement();
     int i = st.executeUpdate("insert into signup values (' " + name + " ', ' " + username + " ', ' " + email + " ', ' " + password + " ')");
     if (i>0) {    
-        response.sendRedirect("index.html");   
+        response.sendRedirect("pricepoint.html");   
     } else {
        out.print("UnSuccessfull!"); 
     }  
